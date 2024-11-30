@@ -1,13 +1,13 @@
 import pandas as pd
 
 def preprocess_text_data(file_path):
-    # Example: Load text data and perform preprocessing
+    #TO ADD ONCE WE HAVE DONE THE SCRAPPING
     data = pd.read_csv(file_path)
     data["cleaned_text"] = data["text"].str.lower()  # Example: Lowercase text
     return data
 
 def preprocess_financial_data(file_path):
-    # Example: Load financial data and perform basic cleaning
+    # TO ADD FROM YAHOOO FINANCE
     data = pd.read_csv(file_path)
     data["timestamp"] = pd.to_datetime(data["timestamp"])
     data.sort_values("timestamp", inplace=True)
