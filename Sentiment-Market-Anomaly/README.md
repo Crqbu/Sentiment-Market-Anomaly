@@ -23,7 +23,8 @@ The goal of this project is to develop an anomaly detection model that leverages
    - We are going to compute the **log returns**
    - Then we are going to compute the **correlation levels between sentiment scores between log returns for different lags**:
          - Combine minute-level or tick-level market data with real-time sentiment signals by addressing                      **asynchronous timestamps**
-   **Algorithm**: if the absolute value of the correlation is larger than 0.75, we expect the volatility levels to be high and persistent 
+   
+**Algorithm**: if the absolute value of the correlation is larger than 0.75, we expect the volatility levels to be high and persistent 
 
 2. **High-Frequency Data Integration**:  
   
