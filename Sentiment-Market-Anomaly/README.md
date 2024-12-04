@@ -18,16 +18,8 @@ The goal of this project is to develop an anomaly detection model that leverages
 ### **Key Features**  
 1. **Sentiment Analysis Pipeline**:  
    - Utilize pre-trained NLP models (e.g., FinBERT) for sentiment classification of textual data.
-      - In order to classify the sentiments into subjective/objective, positive/negative??    
-   - We are going to constrcut a **momentum-trading strategy** 
-   - We are going to compute the **volatility** by averaging the squarred returns 
-   - Then we are going to compute the **transfer entropy levels between sentiment scores between volatility for different lags**:
-         - Combine minute-level or tick-level market data with real-time sentiment signals by addressing **asynchronous timestamps**
-### Main analysis 
-         - Find the lag (k) which maximizes the transfer entropy
-         - Split the data into **different market regimes** and recalculate transfer entropy  
-  
-
+      - In order to classify the sentiments into subjective/objective, positive/negative??
+      - 
 3. **Predictive Analysis**:  
    - Correlate sentiment trends with market anomalies.  
    - Build a risk-scoring mechanism for assets based on sentiment-driven signals.  
