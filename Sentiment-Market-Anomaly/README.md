@@ -13,16 +13,20 @@ This project explores the relationship between sentiment data (e.g., news, socia
 
 ## **Project Overview**  
 ### **Objective**  
-The goal of this project is to develop an anomaly detection model that leverages sentiment signals and high-frequency market data to identify and predict sudden market shifts (e.g., flash crashes).  
+The goal of this project is to develop an anomaly detection model that leverages sentiment signals and high-frequency market data to identify and predict sudden market shifts.  
 
 ### **Key Features**  
 1. **Sentiment Analysis Pipeline**:  
-   - Utilize pre-trained NLP models (e.g., FinBERT) for sentiment classification of textual data.  
-   - Analyze the impact of sentiment shifts on financial markets over time.  
+   - Utilize pre-trained NLP models (e.g., FinBERT) for sentiment classification of textual data.
+      - In order to classify the sentiments into subjective/objective, positive/negative??
+      - Sentiment scores over **consistent time intervals: 15 seconds, 30 seconds, 1 minute, 5 minute and 15           minute intervals**     
+   - We are going to compute the **log returns**
+   - Then we are going to compute the **correlation levels between sentiment scores between log returns for different lags**:
+         - Combine minute-level or tick-level market data with real-time sentiment signals by addressing                      **asynchronous timestamps**
+   **Algorithm**: if the absolute value of the correlation is larger than 0.75, we expect the volatility levels to be high and persistent 
 
 2. **High-Frequency Data Integration**:  
-   - Combine minute-level or tick-level market data with real-time sentiment signals.  
-   - Address asynchronous timestamps and lagged relationships between data sources.  
+  
 
 3. **Predictive Analysis**:  
    - Correlate sentiment trends with market anomalies.  
