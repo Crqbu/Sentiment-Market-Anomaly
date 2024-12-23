@@ -1,8 +1,8 @@
 import json
 import hydra
 from omegaconf import DictConfig
-from Models.BERTSent import BERTSent  # BERTSent.py in Models class
-from Models.LSTMSent import LSTMSent  # LSTMSent.py in Models class
+from Models.BERTSent import BERTSent  # BERTSent.py in models class
+from Models.LSTMSent import LSTMSent  # LSTMSent.py in models class
 
 def load_data(data_path):
     with open(data_path, 'r') as file:
